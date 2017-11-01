@@ -19,7 +19,18 @@ function makeButtonsRespond(){
       console.log(this.value + ' was clicked');
     })
   }
-
+  var equals = document.getElementsByClassName("equals");
+  equals[0].addEventListener("click", handleClick);
+  function handleClick() {
+    console.log("button was clicked")
+  }
+  var buttonClear = document.getElementsByClassName("buttonClear");
+  buttonClear[0].addEventListener("click", handleClick);
+  function handleClick() {
+    console.log("clear button was clicked")
+  }
 }
+
+
 
 })
