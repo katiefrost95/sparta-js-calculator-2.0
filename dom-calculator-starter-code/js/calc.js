@@ -30,6 +30,19 @@ function makeButtonsRespond(){
     console.log("clear button was clicked")
   }
 }
+// Calculator Functions
+function addNumbers(firstNumber, secondNumber) {
+  return parseFloat(firstNumber) + parseFloat(secondNumber);
+}
+function minusNumbers(firstNumber, secondNumber) {
+  return parseFloat(firstNumber) - parseFloat(secondNumber);
+}
+function divideNumbers(firstNumber, secondNumber) {
+  return parseFloat(firstNumber) / parseFloat(secondNumber);
+}
+function timesNumbers(firstNumber, secondNumber) {
+  return parseFloat(firstNumber) * parseFloat(secondNumber);
+}
 
 
 
