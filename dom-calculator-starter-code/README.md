@@ -15,6 +15,8 @@ I've delivered on all of them except number 6.
 ## The challenges
 My biggest challenge is trying to get the equals sign to return the result. I've managed to really confuse myself with my coding and would love more time to fix all my problems because I'm not happy with how it is at the moment.
 
+I need to scrap the operators function and put them out separately.
+
 ## What Went well
 
 I started off well, managed to do the DOM stuff okay, the buttons respond when clicked so I'm most pleased that at least some of the calclator works

@@ -8,6 +8,7 @@ var add = false;
 var minus = false;
 var divide = false;
 var times = false;
+var screen = document.getElementById("screen");
 
 // Buttons responding
 makeButtonsRespond();
@@ -19,7 +20,7 @@ function makeButtonsRespond(){
 
     button.addEventListener('click', function(event) {
       number = number + this.value;
-      document.getElementById('screen').innerHTML = number;
+      screen.innerHTML = number;
       console.log(number);
     })
   }
@@ -29,6 +30,7 @@ function makeButtonsRespond(){
     var operator_button = operator[i]
     operator_button.addEventListener('click', function(event) {
       var numberOne = parseFloat(number);
+      number = "";
       if (this.value === "+") {
         var add = true;
       }
@@ -40,10 +42,9 @@ function makeButtonsRespond(){
   var buttonEquals = document.querySelector(".equals");
   buttonEquals.addEventListener("click", function(event) {
     var numberTwo = parseFloat(number);
-    if (add == true) {
-      addNumbers(numberOne, numberTwo);
-      // document.getElementById('screen').innerHTML = "" + (numberOne + numberTwo);
-      // console.log(this.value + ' was clicked');
+    if (!add) {
+      screen.innerHTML = addNumbers(numberOne, numberTwo);
+      console.log(this.value + ' was clicked');
     }
   })
 //clear button
@@ -66,7 +67,5 @@ function divideNumbers(firstNumber, secondNumber) {
 function timesNumbers(firstNumber, secondNumber) {
   return parseFloat(firstNumber) * parseFloat(secondNumber);
 }
-
-
 
 })
