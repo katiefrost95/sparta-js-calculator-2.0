@@ -26,30 +26,25 @@ function makeButtonsRespond(){
 // operations buttons
   var operator = document.querySelectorAll('.operator')
   for (var i = 0; i < operator.length; i++) {
-    var operator_button = operator[i];
-
+    var operator_button = operator[i]
     operator_button.addEventListener('click', function(event) {
       var numberOne = parseFloat(number);
-      number = "";
       if (this.value === "+") {
         var add = true;
-        var minus = false;
-        var divide = false;
-        var times = false;
       }
       var numberTwo = parseFloat(number);
       console.log(this.value + ' was clicked');
     })
   }
 // equals button
-  var buttonEquals = document.getElementsByClassName("equals");
-  var button_equals = buttonEquals[0];
-  button_equals.addEventListener("click", function(event) {
+  var buttonEquals = document.querySelector(".equals");
+  buttonEquals.addEventListener("click", function(event) {
     var numberTwo = parseFloat(number);
-    if (add) {
-      document.getElementById('screen').innerHTML = "" + (numberOne + numberTwo);
+    if (add == true) {
+      addNumbers(numberOne, numberTwo);
+      // document.getElementById('screen').innerHTML = "" + (numberOne + numberTwo);
+      // console.log(this.value + ' was clicked');
     }
-    console.log(this.value + ' was clicked')
   })
 //clear button
   var buttonClear = document.getElementsByClassName("buttonClear");
