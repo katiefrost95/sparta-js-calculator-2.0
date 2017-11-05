@@ -19,4 +19,4 @@ I need to scrap the operators function and put them out separately.
 
 ## What Went well
 
-I started off well, managed to do the DOM stuff okay, the buttons respond when clicked so I'm most pleased that at least some of the calclator works
+I started off well, managed to do the DOM stuff okay, the buttons respond when clicked so I'm most pleased that at least some of the calculator works

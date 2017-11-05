@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
   console.log('the content is loaded');
 
 var number = "";
-var numberOne = 0;
-var numberTwo = 0;
+var numberOne;
+var numberTwo;
 var add = false;
 var minus = false;
 var divide = false;
